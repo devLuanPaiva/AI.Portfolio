@@ -1,2 +1,3 @@
-const x = 123
-export { x }
+export * from './project'
+export * from './technology'
+export * from './shared'
