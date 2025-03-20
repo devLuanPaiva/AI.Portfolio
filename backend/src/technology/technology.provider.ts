@@ -1,6 +1,6 @@
 import { Technology } from "@core"
 import { Injectable } from '@nestjs/common';
-import { PrismaProvider } from 'src/database/prisma.provider';
+import { PrismaProvider } from '../database/prisma.provider';
 
 @Injectable()
 export class TechnologyProvider {

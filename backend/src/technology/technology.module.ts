@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TechnologyController } from './technology.controller';
 import { TechnologyProvider } from './technology.provider';
-import { DatabaseModule } from 'src/database/database.module';
+import { DatabaseModule } from '../database/database.module';
 
 @Module({
   controllers: [TechnologyController],
