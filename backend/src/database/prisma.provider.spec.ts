@@ -20,4 +20,9 @@ describe('PrismaProvider', () => {
     await provider.onModuleInit();
     expect(connectSpy).toHaveBeenCalledTimes(1);
   });
+  it('should call $disconnect on module destroy', async () => {
+    const disconnectSpy = jest.spyOn(provider, '$disconnect').mockResolvedValue(undefined);
+    await provider.onModuleDestroy();
+    expect(disconnectSpy).toHaveBeenCalledTimes(1);
+  });
 });
