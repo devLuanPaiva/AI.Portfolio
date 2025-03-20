@@ -47,4 +47,27 @@ describe('ProjectProvider', () => {
         expect(projects).toEqual(mockProjects);
         expect(prismaProvider.project.findMany).toHaveBeenCalledTimes(1);
     });
+    it('should return a project by ID', async () => {
+        const mockProject: Project = {
+            id: 1,
+            name: 'Project 1',
+            description: 'Description 1',
+            images: ['img1.jpg'],
+            level: 1,
+            type: 'web' as Type.WEB,
+            highlighted: false,
+            repository: 'repo1',
+            technologies: [],
+        };
+
+        jest.spyOn(prismaProvider.project, 'findUnique').mockResolvedValue(mockProject);
+
+        const project = await projectProvider.getProjectById(1);
+        expect(project).toEqual(mockProject);
+        expect(prismaProvider.project.findUnique).toHaveBeenCalledWith({
+            where: { id: 1 },
+            include: { technologies: true },
+        });
+    });
+
 })
