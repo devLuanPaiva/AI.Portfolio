@@ -69,5 +69,14 @@ describe('ProjectProvider', () => {
             include: { technologies: true },
         });
     });
+    it('should return null if project not found', async () => {
+        jest.spyOn(prismaProvider.project, 'findUnique').mockResolvedValue(null);
 
+        const project = await projectProvider.getProjectById(99);
+        expect(project).toBeNull();
+        expect(prismaProvider.project.findUnique).toHaveBeenCalledWith({
+            where: { id: 99 },
+            include: { technologies: true },
+        });
+    });
 })
