@@ -43,4 +43,11 @@ describe('ProjectController', () => {
         expect(project).toEqual(mockProject);
         expect(projectProvider.getProjectById).toHaveBeenCalledWith(1);
     });
+    it('should return null if project not found', async () => {
+        jest.spyOn(projectProvider, 'getProjectById').mockResolvedValue(null);
+
+        const project = await projectController.getProjectById(99);
+        expect(project).toBeNull();
+        expect(projectProvider.getProjectById).toHaveBeenCalledWith(99);
+    });
 })
