@@ -5,7 +5,7 @@ import Menu from "../shared/Menu";
 
 export default function Header() {
     return (
-        <header className="flex  items-center min-h-16  py-1">
+        <header className="flex  items-center min-h-16  py-1 bg-black/50 shadow  z-50 relative w-full">
             <Container classStyle="flex items-center justify-between">
                 <div className="flex items-center gap-6">
                     <Logo />
