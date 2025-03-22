@@ -10,7 +10,7 @@ export default function ProjectItem(props: Readonly<ProjectProps>) {
                     src={props.project.images[0]}
                     alt={props.project.name}
                     fill
-                    objectFit="cover"
+                    objectFit="object-cover"
                 />
             </article>
         </Link>
