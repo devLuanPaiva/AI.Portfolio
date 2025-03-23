@@ -96,3 +96,10 @@
 		}
 	}
 }
+[data-badges] {
+	@apply flex flex-row flex-wrap justify-center gap-2 p-1;
+}
+
+[data-badges] > img {
+	@apply m-0;
+}
