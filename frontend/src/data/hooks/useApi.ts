@@ -1,10 +1,9 @@
 "use client"
 import { useEffect, useState } from "react"
 import { ajax } from "rxjs/ajax"
-import { BehaviorSubject, switchMap, catchError, of } from "rxjs"
+import { catchError, of } from "rxjs"
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL
-const apiEndpoint$ = new BehaviorSubject<string | null>(null)
 
 export function useApi<T>(endpoint: string) {
 	const [data, setData] = useState<T | null>(null)
@@ -15,20 +14,15 @@ export function useApi<T>(endpoint: string) {
 		if (!BASE_URL || !endpoint) return
 
 		const fullUrl = `${BASE_URL}${endpoint}`
-		apiEndpoint$.next(fullUrl) 
+		setLoading(true)
 
-		const subscription = apiEndpoint$
+		const subscription = ajax
+			.getJSON<T>(fullUrl)
 			.pipe(
-				switchMap((url) => {
-					if (!url) return of(null)
-					setLoading(true)
-					return ajax.getJSON<T>(url).pipe(
-						catchError((err) => {
-							setError(err.message)
-							setLoading(false)
-							return of(null)
-						})
-					)
+				catchError((err) => {
+					setError(err.message)
+					setLoading(false)
+					return of(null)
 				})
 			)
 			.subscribe((response) => {
@@ -38,5 +32,6 @@ export function useApi<T>(endpoint: string) {
 
 		return () => subscription.unsubscribe()
 	}, [endpoint])
+
 	return { data, loading, error }
 }

@@ -11,12 +11,17 @@
   "dependencies": {
     "@tabler/icons": "^3.31.0",
     "@tabler/icons-react": "^3.31.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
+    "lucide-react": "^0.483.0",
     "motion-ui": "^2.0.8",
     "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rxjs": "^7.8.2"
+    "rxjs": "^7.8.2",
+    "tailwind-merge": "^3.0.2",
+    "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
