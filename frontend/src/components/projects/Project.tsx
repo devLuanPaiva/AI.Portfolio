@@ -20,7 +20,7 @@ export default function Project(props: Readonly<{ id: string }>) {
 	}, [project?.repository])
 
 	if (loading) return <p>Carregando...</p>
-
+	if (!project) return null
 	return (
 		<section>
 			<Container classStyle="py-7 flex flex-col items-center gap-10">
@@ -28,7 +28,7 @@ export default function Project(props: Readonly<{ id: string }>) {
 					{project?.name ?? "Não encontrado"}
 				</h1>
 
-				<ProjectImagesList images={project?.images?.slice(1)} />
+				<ProjectImagesList images={project.images.slice(1)} />
 				<Technologies smallerSize technologies={project?.technologies ?? []} />
 				<Readme markdown={readme} />
 			</Container>
