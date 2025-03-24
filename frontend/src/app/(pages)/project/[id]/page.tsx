@@ -3,7 +3,7 @@ import ProjectImagesList from "@/components/projects/ProjectImagesList";
 import Readme from "@/components/projects/Readme";
 import Technologies from "@/components/technologies/Technologies";
 import Container from "@/components/template/Container";
-import { fetchReadme } from "@/data/hooks/useGithub";
+import { fetchReadme } from "@/data/functions/fetchReadme";
 import { useProjectId } from "@/data/hooks/useProjects";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
