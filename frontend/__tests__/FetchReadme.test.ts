@@ -14,4 +14,10 @@ describe('fetchReadme function', () => {
 
         expect(result).toBe(mockText);
     });
+    it('should return "Invalid repository" when the URL is not valid', async () => {
+        const result = await fetchReadme('https://google.com');
+
+        expect(result).toBe('Repositório inválido');
+    });
+
 })
