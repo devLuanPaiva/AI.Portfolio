@@ -20,5 +20,16 @@ describe("toTalk function", () => {
 
         expect(result).toBe('Message received');
     });
+    it('should return null when webhookUrl is not defined', async () => {
+        process.env.CHAT_WEBHOOK = undefined;
 
+        const result = await toTalk('chatId123', {
+            text: 'Hello',
+            id: Id.toGenerate(),
+            author: '',
+            side: 'right'
+        });
+
+        expect(result).toBeNull();
+    });
 })
