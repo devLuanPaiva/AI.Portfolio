@@ -9,4 +9,20 @@ describe("useScrollerAnimation hook", () => {
 		expect(result.current.scrollerRef.current).toBeNull()
 		expect(result.current.start).toBe(false)
 	})
+	it("should duplicate scroller elements", () => {
+		const { result } = renderHook(() => useScrollerAnimation())
+
+		const container = document.createElement("div")
+		const scroller = document.createElement("ul")
+		const listItem = document.createElement("li")
+		listItem.textContent = "Item 1"
+
+		scroller.appendChild(listItem)
+		container.appendChild(scroller)
+
+		result.current.containerRef.current = container
+		result.current.scrollerRef.current = scroller
+
+		expect(scroller.children.length).toBe(1)
+	})
 })
