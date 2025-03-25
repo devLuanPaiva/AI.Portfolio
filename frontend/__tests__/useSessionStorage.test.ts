@@ -15,5 +15,14 @@ describe("useSessionStorage hook", () => {
         const { result } = renderHook(() => useSessionStorage("testKey", "defaultValue"))
         expect(result.current[0]).toBe("storedValue")
     })
+    it("should update the value in state and sessionStorage", () => {
+        const { result } = renderHook(() => useSessionStorage("testKey", "defaultValue"))
 
+        act(() => {
+            result.current[1]("newValue")
+        })
+
+        expect(result.current[0]).toBe("newValue")
+        expect(JSON.parse(sessionStorage.getItem("testKey")!)).toBe("newValue")
+    })
 })
