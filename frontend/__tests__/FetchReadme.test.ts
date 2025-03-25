@@ -26,4 +26,14 @@ describe('fetchReadme function', () => {
 
         expect(result).toBe('Não foi possível carregar o README.');
     });
+    it('should return "Unable to load README." when the response status is bad', async () => {
+
+        (fetch as jest.Mock).mockResolvedValueOnce({
+            ok: false,
+        });
+
+        const result = await fetchReadme('https://github.com/usuario/repositorio');
+
+        expect(result).toBe('Não foi possível carregar o README.');
+    });
 })
