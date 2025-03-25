@@ -19,5 +19,11 @@ describe('fetchReadme function', () => {
 
         expect(result).toBe('Repositório inválido');
     });
+    it('should return "Could not load README." when there is an error in the request', async () => {
+        (fetch as jest.Mock).mockRejectedValueOnce(new Error('Erro de rede'));
 
+        const result = await fetchReadme('https://github.com/usuario/repositorio');
+
+        expect(result).toBe('Não foi possível carregar o README.');
+    });
 })
