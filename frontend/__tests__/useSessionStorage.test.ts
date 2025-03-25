@@ -10,4 +10,10 @@ describe("useSessionStorage hook", () => {
         const { result } = renderHook(() => useSessionStorage("testKey", "defaultValue"))
         expect(result.current[0]).toBe("defaultValue")
     })
+    it("must retrieve the value stored in sessionStorage", () => {
+        sessionStorage.setItem("testKey", JSON.stringify("storedValue"))
+        const { result } = renderHook(() => useSessionStorage("testKey", "defaultValue"))
+        expect(result.current[0]).toBe("storedValue")
+    })
+
 })
