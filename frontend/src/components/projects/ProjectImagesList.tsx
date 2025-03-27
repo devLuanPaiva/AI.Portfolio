@@ -8,7 +8,6 @@ interface ImageListsProps {
 }
 export default function ProjectImagesList(props: Readonly<ImageListsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
-	console.log(props.images)
 	return (
 		<section>
 			<div
