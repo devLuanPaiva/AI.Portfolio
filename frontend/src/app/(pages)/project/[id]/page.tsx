@@ -1,4 +1,5 @@
 import Project from "@/components/projects/Project"
+import Loading from "@/components/shared/Loading"
 import { Suspense } from "react"
 
 export default async function PageProject(
@@ -6,7 +7,7 @@ export default async function PageProject(
 ) {
 	const { id } = await props.params
 	return (
-		<Suspense fallback={<p>Carregando...</p>}>
+		<Suspense fallback={<Loading/>}>
 			<Project id={id} />
 		</Suspense>
 	)
