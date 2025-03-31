@@ -2,6 +2,7 @@
 import Curriculum from "@/components/document/Curriculum"
 import Landing from "@/components/Landing/Landing"
 import ProjectsList from "@/components/projects/ProjectsList"
+import Loading from "@/components/shared/Loading"
 import Container from "@/components/template/Container"
 import { useProjects } from "@/data/hooks/useProjects"
 import { useTechnologies } from "@/data/hooks/useTechnologies"
@@ -14,7 +15,7 @@ export default function Home() {
 	if (loading) return
 
 	return (
-		<Suspense fallback={<p>carregando...</p>}>
+		<Suspense fallback={<Loading message="Carregando..." />}>
 			<Landing technologies={highlightedTechnologies} />
 			<Container classStyle="py-20 flex flex-col gap-7">
 				<ProjectsList
