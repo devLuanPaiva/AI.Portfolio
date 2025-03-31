@@ -15,7 +15,7 @@ export default function Home() {
 	if (loading) return
 
 	return (
-		<Suspense fallback={<Loading/>}>
+		<Suspense fallback={<Loading message="Carregando..." />}>
 			<Landing technologies={highlightedTechnologies} />
 			<Container classStyle="py-20 flex flex-col gap-7">
 				<ProjectsList

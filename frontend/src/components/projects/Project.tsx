@@ -20,7 +20,7 @@ export default function Project(props: Readonly<{ id: string }>) {
 		}
 	}, [project?.repository])
 
-	if (loading) return <Loading/>
+	if (loading) return <Loading message="Carregando projeto..." />
 	if (!project) return null
 	return (
 		<section>
