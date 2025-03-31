@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
+      <body cz-shortcut-listen="false"
         className={`${montserrat.className}  antialiased`}
       >
         {children}
