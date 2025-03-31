@@ -7,7 +7,7 @@ export default async function PageProject(
 ) {
 	const { id } = await props.params
 	return (
-		<Suspense fallback={<Loading/>}>
+		<Suspense fallback={<Loading message="Carregando projeto..." />}>
 			<Project id={id} />
 		</Suspense>
 	)
