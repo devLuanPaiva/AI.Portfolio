@@ -1,43 +1,36 @@
 "use client"
-import { Project, Type } from "@core"
-import { useApi } from "./useApi"
+import {  Type } from "@core"
 import { useMemo } from "react"
-
+import { projects } from "../constants/projects.const"
 export function useProjects() {
-	const { data, loading, error } = useApi<Project[]>("/project")
-
 	const highlightedProjects = useMemo(
-		() => data?.filter((project) => project.highlighted) || [],
-		[data]
+		() => projects?.filter((project) => project.highlighted) || [],
+		[]
 	)
 	const webProjects = useMemo(
-		() => data?.filter((project) => project.type === Type.WEB) || [],
-		[data]
+		() => projects?.filter((project) => project.type === Type.WEB) || [],
+		[]
 	)
 	const gameProjects = useMemo(
-		() => data?.filter((project) => project.type === Type.GAME) || [],
-		[data]
+		() => projects?.filter((project) => project.type === Type.GAME) || [],
+		[]
 	)
 	const mobileProjects = useMemo(
-		() => data?.filter((project) => project.type === Type.MOBILE) || [],
-		[data]
+		() => projects?.filter((project) => project.type === Type.MOBILE) || [],
+		[]
 	)
 
 	return {
-		projects: data || [],
+		projects: projects || [],
 		highlightedProjects,
 		webProjects,
 		gameProjects,
 		mobileProjects,
-		loading,
-		error,
 	}
 }
 export function useProjectId(projectId: string) {
-	const { data, loading, error } = useApi<Project>(`/project/${projectId}`)
 	return {
-		project: data || null,
-		loading,
-		error,
+		project:
+			projects.find((project) => project.id === Number(projectId)) || null,
 	}
 }
