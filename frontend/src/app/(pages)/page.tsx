@@ -9,10 +9,9 @@ import { useTechnologies } from "@/data/hooks/useTechnologies"
 import { Suspense } from "react"
 
 export default function Home() {
-	const { technologies, highlightedTechnologies, loading } = useTechnologies()
+	const { technologies, highlightedTechnologies } = useTechnologies()
 	const { gameProjects, highlightedProjects, mobileProjects, webProjects } =
 		useProjects()
-	if (loading) return
 
 	return (
 		<Suspense fallback={<Loading message="Carregando..." />}>
