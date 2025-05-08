@@ -10,8 +10,7 @@ import { Suspense } from "react"
 
 export default function Home() {
 	const { technologies, highlightedTechnologies } = useTechnologies()
-	const { gameProjects, highlightedProjects, mobileProjects, webProjects } =
-		useProjects()
+	const { highlightedProjects, mobileProjects, webProjects } = useProjects()
 
 	return (
 		<Suspense fallback={<Loading message="Carregando..." />}>
@@ -27,7 +26,6 @@ export default function Home() {
 				/>
 				<ProjectsList title="Web" projects={webProjects} />
 				<ProjectsList title="Mobile" projects={mobileProjects} />
-				<ProjectsList title="Jogos" projects={gameProjects} />
 				<Curriculum technologies={technologies} />
 			</Container>
 		</Suspense>
