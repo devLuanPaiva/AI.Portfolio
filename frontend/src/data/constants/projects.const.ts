@@ -79,4 +79,25 @@ export const projects: Project[] = [
 			technologies[20],
 		],
 	},
+	{
+		id: 3,
+		name: "Trackllo",
+		description: "Trackllo é um gerenciador de quadros Kanban moderno e intuitivo, criado para ajudar equipes a acompanhar o progresso de tarefas e manter todos sempre alinhados.",
+		images: ["https://ik.imagekit.io/p0mm3nebo/trackllo/woman-board.jpg?updatedAt=1746727536822", "https://ik.imagekit.io/p0mm3nebo/trackllo/image2.png?updatedAt=1746727430472", "https://ik.imagekit.io/p0mm3nebo/trackllo/image1.png?updatedAt=1746727430287", "https://ik.imagekit.io/p0mm3nebo/trackllo/image4.png?updatedAt=1746727430758"],
+		level: Level.INTERMEDIARY,
+		type: Type.WEB,
+		highlighted: false,
+		repository: "https://github.com/devLuanPaiva/Trackllo",
+		technologies: [
+			technologies[5],
+			technologies[9],
+			technologies[11],
+			technologies[12],
+			technologies[14],
+			technologies[15],
+			technologies[16],
+			technologies[19],
+			technologies[20],
+		]
+	}
 ]
