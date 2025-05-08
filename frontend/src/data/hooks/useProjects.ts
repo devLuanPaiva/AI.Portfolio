@@ -1,5 +1,5 @@
 "use client"
-import {  Type } from "@core"
+import { Type } from "@core"
 import { useMemo } from "react"
 import { projects } from "../constants/projects.const"
 export function useProjects() {
@@ -11,10 +11,7 @@ export function useProjects() {
 		() => projects?.filter((project) => project.type === Type.WEB) || [],
 		[]
 	)
-	const gameProjects = useMemo(
-		() => projects?.filter((project) => project.type === Type.GAME) || [],
-		[]
-	)
+
 	const mobileProjects = useMemo(
 		() => projects?.filter((project) => project.type === Type.MOBILE) || [],
 		[]
@@ -24,7 +21,6 @@ export function useProjects() {
 		projects: projects || [],
 		highlightedProjects,
 		webProjects,
-		gameProjects,
 		mobileProjects,
 	}
 }
