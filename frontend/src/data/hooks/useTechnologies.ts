@@ -6,7 +6,7 @@ export function useTechnologies() {
 
 	const highlightedTechnologies = useMemo(
 		() => technologies?.filter((tech) => tech.highlighted) || [],
-		[technologies]
+		[]
 	)
 
 	return { technologies, highlightedTechnologies }
