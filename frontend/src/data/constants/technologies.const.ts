@@ -21,7 +21,7 @@ export const technologies: Technology[] = [
     { id: 17, name: "React", description: "Biblioteca para interfaces de usuário reativas.", image: ReactIcon.src, highlighted: true },
     { id: 18, name: "Sass", description: "Pré-processador CSS com funcionalidades extras.", image: SassIcon.src, highlighted: false },
     { id: 19, name: "Scrum", description: "Metodologia ágil de desenvolvimento.", image: ScrumIcon.src, highlighted: false },
-    { id: 20, name: "Tailwind CSS", description: "Framework CSS utilitário para construção rápida de interfaces.", image: TailwindIcon.src, highlighted: false },
+    { id: 20, name: "Tailwind CSS", description: "Framework CSS utilitário para construção rápida de interfaces.", image: TailwindIcon.src, highlighted: true },
     { id: 21, name: "TypeScript", description: "Superset do JavaScript com tipagem estática.", image: TypescriptIcon.src, highlighted: true },
     { id: 22, name: "UML", description: "Linguagem de modelagem de sistemas orientados a objeto.", image: UMLIcon.src, highlighted: false },
     { id: 23, name: "Vercel", description: "Plataforma de deploy para projetos front-end.", image: VercelIcon.src, highlighted: false },
