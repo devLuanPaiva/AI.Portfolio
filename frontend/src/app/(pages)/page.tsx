@@ -1,4 +1,5 @@
 "use client"
+import Contacts from "@/components/contacts/Contacts"
 import Curriculum from "@/components/document/Curriculum"
 import MyJob from "@/components/job/MyJob"
 import Landing from "@/components/Landing/Landing"
@@ -30,6 +31,7 @@ export default function Home() {
 				<Curriculum technologies={technologies} />
 				<MyJob />
 			</Container>
+			<Contacts />
 		</Suspense>
 	)
 }
