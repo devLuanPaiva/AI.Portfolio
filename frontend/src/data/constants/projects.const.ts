@@ -89,7 +89,7 @@ export const projects: Project[] = [
 			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%204.jpg?updatedAt=1746790954118"],
 		level: Level.INTERMEDIARY,
 		type: Type.WEB,
-		highlighted: false,
+		highlighted: true,
 		repository: "https://github.com/devLuanPaiva/Trackllo",
 		technologies: [
 			technologies[5],
@@ -119,6 +119,24 @@ export const projects: Project[] = [
 			technologies[5],
 			technologies[8],
 			technologies[16],
+			technologies[20],
+		]
+	},
+	{
+		id: 5,
+		name: "Pokédex",
+		description: "Pokédex é uma aplicação web que funciona como uma Pokédex, permitindo aos usuários pesquisar, visualizar e filtrar informações sobre os Pokémon. A aplicação utiliza a PokeAPI para obter dados sobre os Pokémon.",
+		images: [
+			"https://ik.imagekit.io/p0mm3nebo/pokedex/Group%208.jpg?updatedAt=1746794533522",
+			"https://ik.imagekit.io/p0mm3nebo/pokedex/Facebook%20cover%20-%205.jpg?updatedAt=1746794346157",
+			"https://ik.imagekit.io/p0mm3nebo/pokedex/Facebook%20cover%20-%206.jpg?updatedAt=1746794345893"
+		],
+		level: Level.BEGINNER,
+		type: Type.MOBILE,
+		highlighted: false,
+		repository: "https://github.com/devLuanPaiva/pokedex",
+		technologies: [
+			technologies[24],
 			technologies[20],
 		]
 	}
