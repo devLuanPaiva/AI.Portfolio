@@ -99,5 +99,21 @@ export const projects: Project[] = [
 			technologies[19],
 			technologies[20],
 		]
+	},
+	{
+		id: 4,
+		name: "Space Quiz",
+		description: "Space Quiz é um aplicativo de perguntas e respostas sobre o espaço desenvolvido com React Native. O objetivo do aplicativo é testar seus conhecimentos sobre o cosmos com um quiz de 10 questões. No final, você verá a porcentagem de acertos para avaliar o seu desempenho.",
+		images: ["https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Captura%20de%20tela%202025-05-09%20073850.png?updatedAt=1746788660802", "https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%202.jpg?updatedAt=1746788626422", "https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%201.jpg?updatedAt=1746788626456"],
+		level: Level.BEGINNER,
+		type: Type.MOBILE,
+		highlighted: false,
+		repository: "https://github.com/devLuanPaiva/Space-Quiz",
+		technologies: [
+			technologies[5],
+			technologies[9],
+			technologies[16],
+			technologies[20],
+		]
 	}
 ]
