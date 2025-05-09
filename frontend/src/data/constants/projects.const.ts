@@ -83,7 +83,10 @@ export const projects: Project[] = [
 		id: 3,
 		name: "Trackllo",
 		description: "Trackllo é um gerenciador de quadros Kanban moderno e intuitivo, criado para ajudar equipes a acompanhar o progresso de tarefas e manter todos sempre alinhados.",
-		images: ["https://ik.imagekit.io/p0mm3nebo/trackllo/woman-board.jpg?updatedAt=1746727536822", "https://ik.imagekit.io/p0mm3nebo/trackllo/image2.png?updatedAt=1746727430472", "https://ik.imagekit.io/p0mm3nebo/trackllo/image1.png?updatedAt=1746727430287", "https://ik.imagekit.io/p0mm3nebo/trackllo/image4.png?updatedAt=1746727430758"],
+		images: [
+			"https://ik.imagekit.io/p0mm3nebo/trackllo/woman-board.jpg?updatedAt=1746727536822",
+			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%203.jpg?updatedAt=1746790954172",
+			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%204.jpg?updatedAt=1746790954118"],
 		level: Level.INTERMEDIARY,
 		type: Type.WEB,
 		highlighted: false,
@@ -104,14 +107,17 @@ export const projects: Project[] = [
 		id: 4,
 		name: "Space Quiz",
 		description: "Space Quiz é um aplicativo de perguntas e respostas sobre o espaço desenvolvido com React Native. O objetivo do aplicativo é testar seus conhecimentos sobre o cosmos com um quiz de 10 questões. No final, você verá a porcentagem de acertos para avaliar o seu desempenho.",
-		images: ["https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Captura%20de%20tela%202025-05-09%20073850.png?updatedAt=1746788660802", "https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%202.jpg?updatedAt=1746788626422", "https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%201.jpg?updatedAt=1746788626456"],
+		images: [
+			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Captura%20de%20tela%202025-05-09%20073850.png?updatedAt=1746788660802",
+			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%202.jpg?updatedAt=1746788626422",
+			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%201.jpg?updatedAt=1746788626456"],
 		level: Level.BEGINNER,
 		type: Type.MOBILE,
 		highlighted: false,
 		repository: "https://github.com/devLuanPaiva/Space-Quiz",
 		technologies: [
 			technologies[5],
-			technologies[9],
+			technologies[8],
 			technologies[16],
 			technologies[20],
 		]
