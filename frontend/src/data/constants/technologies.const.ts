@@ -1,0 +1,31 @@
+import { Technology } from "@core";
+import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, PostgresqlIcon, PrismaIcon, ReactIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
+
+export const technologies: Technology[] = [
+    { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },
+    { id: 2, name: "AWS", description: "Serviços de nuvem com ampla cobertura global.", image: AwsIcon.src, highlighted: false },
+    { id: 3, name: "CSS3", description: "Linguagem de estilo para páginas web.", image: CssIcon.src, highlighted: false },
+    { id: 4, name: "Django", description: "Framework web em Python para desenvolvimento rápido.", image: DjangoIcon.src, highlighted: false },
+    { id: 5, name: "Figma", description: "Ferramenta colaborativa de design de interface.", image: FigmaIcon.src, highlighted: false },
+    { id: 6, name: "Git", description: "Sistema de controle de versão distribuído.", image: GitIcon.src, highlighted: false },
+    { id: 7, name: "Gulp", description: "Automatizador de tarefas front-end.", image: GulpIcon.src, highlighted: false },
+    { id: 8, name: "HTML5", description: "Linguagem de marcação para estruturação web.", image: HtmlIcon.src, highlighted: false },
+    { id: 9, name: "JavaScript", description: "Linguagem de programação para a web.", image: JavascriptIcon.src, highlighted: false },
+    { id: 10, name: "Jest", description: "Framework de testes para JavaScript.", image: JestIcon.src, highlighted: false },
+    { id: 11, name: "MySQL", description: "Sistema de gerenciamento de banco de dados relacional.", image: MysqlIcon.src, highlighted: false },
+    { id: 12, name: "NestJS", description: "Framework Node.js escalável com TypeScript.", image: NestjsIcon.src, highlighted: true },
+    { id: 13, name: "Next.js", description: "Framework React com renderização híbrida e recursos avançados.", image: NextjsIcon.src, highlighted: true },
+    { id: 14, name: "Node.js", description: "Ambiente de execução para JavaScript no servidor.", image: NodejsIcon.src, highlighted: false },
+    { id: 15, name: "PostgreSQL", description: "Banco de dados relacional avançado de código aberto.", image: PostgresqlIcon.src, highlighted: false },
+    { id: 16, name: "Prisma", description: "ORM para Node.js e TypeScript.", image: PrismaIcon.src, highlighted: false },
+    { id: 17, name: "React", description: "Biblioteca para interfaces de usuário reativas.", image: ReactIcon.src, highlighted: true },
+    { id: 18, name: "Sass", description: "Pré-processador CSS com funcionalidades extras.", image: SassIcon.src, highlighted: false },
+    { id: 19, name: "Scrum", description: "Metodologia ágil de desenvolvimento.", image: ScrumIcon.src, highlighted: false },
+    { id: 20, name: "Tailwind CSS", description: "Framework CSS utilitário para construção rápida de interfaces.", image: TailwindIcon.src, highlighted: true },
+    { id: 21, name: "TypeScript", description: "Superset do JavaScript com tipagem estática.", image: TypescriptIcon.src, highlighted: true },
+    { id: 22, name: "UML", description: "Linguagem de modelagem de sistemas orientados a objeto.", image: UMLIcon.src, highlighted: false },
+    { id: 23, name: "Vercel", description: "Plataforma de deploy para projetos front-end.", image: VercelIcon.src, highlighted: false },
+    { id: 24, name: "Vite", description: "Bundler moderno e rápido para projetos web.", image: ViteIcon.src, highlighted: false },
+    { id: 25, name: "Vue.js", description: "Framework progressivo para construção de interfaces.", image: VuejsIcon.src, highlighted: false },
+];
+

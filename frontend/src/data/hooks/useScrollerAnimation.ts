@@ -1,16 +1,24 @@
 'use client'
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useCallback } from "react"
 
 export function useScrollerAnimation() {
 	const containerRef = useRef<HTMLDivElement>(null)
 	const scrollerRef = useRef<HTMLUListElement>(null)
 	const [start, setStart] = useState(false)
 
-	useEffect(() => {
-		addAnimation()
+	const getDirection = useCallback(() => {
+		if (containerRef.current) {
+			containerRef.current.style.setProperty("--animation-direction", "forwards")
+		}
 	}, [])
 
-	function addAnimation() {
+	const getSpeed = useCallback(() => {
+		if (containerRef.current) {
+			containerRef.current.style.setProperty("--animation-duration", "80s")
+		}
+	}, [])
+
+	const addAnimation = useCallback(() => {
 		if (containerRef.current && scrollerRef.current) {
 			const scrollerContent = Array.from(scrollerRef.current.children)
 
@@ -25,22 +33,11 @@ export function useScrollerAnimation() {
 			getSpeed()
 			setStart(true)
 		}
-	}
+	}, [getDirection, getSpeed])
 
-	function getDirection() {
-		if (containerRef.current) {
-			containerRef.current.style.setProperty(
-				"--animation-direction",
-				"forwards"
-			)
-		}
-	}
-
-	function getSpeed() {
-		if (containerRef.current) {
-			containerRef.current.style.setProperty("--animation-duration", "80s")
-		}
-	}
+	useEffect(() => {
+		addAnimation()
+	}, [addAnimation])
 
 	return { containerRef, scrollerRef, start }
 }

@@ -6,11 +6,10 @@ import Container from "../template/Container"
 import ProjectImagesList from "./ProjectImagesList"
 import Technologies from "../technologies/Technologies"
 import Readme from "./Readme"
-import Loading from "../shared/Loading"
 
 export default function Project(props: Readonly<{ id: string }>) {
 	const [readme, setReadme] = useState<string>("")
-	const { loading, project } = useProjectId(props.id)
+	const { project } = useProjectId(props.id)
 
 	useEffect(() => {
 		if (project?.repository) {
@@ -20,7 +19,6 @@ export default function Project(props: Readonly<{ id: string }>) {
 		}
 	}, [project?.repository])
 
-	if (loading) return <Loading message="Carregando projeto..." />
 	if (!project) return null
 	return (
 		<section>

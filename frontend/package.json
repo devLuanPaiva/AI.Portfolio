@@ -10,13 +10,13 @@
     "test": "jest --watch"
   },
   "dependencies": {
+    "@imagekit/next": "^2.1.0",
     "@radix-ui/react-popover": "^1.1.6",
     "@tabler/icons": "^3.31.0",
     "@tabler/icons-react": "^3.31.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
-    "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^29.5.14",
     "class-variance-authority": "^0.7.1",

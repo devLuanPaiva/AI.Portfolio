@@ -82,13 +82,14 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+
 	body {
 		@apply bg-background text-foreground;
 	}
 }
+
 @theme inline {
-	--animate-scroll: scroll var(--animation-duration, 40s)
-		var(--animation-direction, forwards) linear infinite;
+	--animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 
 	@keyframes scroll {
 		to {
@@ -96,10 +97,43 @@
 		}
 	}
 }
+
 [data-badges] {
 	@apply flex flex-row flex-wrap justify-center gap-2 p-1;
 }
 
-[data-badges] > img {
+[data-badges]>img {
 	@apply m-0;
+}
+
+
+@layer base {
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	:root {
+		--scrollbar-thumb: #fb2c36;
+	}
+
+	.dark {
+		--scrollbar-thumb: #09090B;
+	}
+}
+
+@layer utilities {
+	::-webkit-scrollbar {
+		width: 10px;
+		background-color: #09090B;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbar-thumb);
+		border-radius: 9999px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #09090B;
+	}
 }

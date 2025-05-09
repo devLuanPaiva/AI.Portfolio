@@ -1,15 +1,13 @@
 "use client"
-import { Technology } from "@core"
-import { useApi } from "./useApi"
+import { technologies } from '@/data/constants/technologies.const'
 import { useMemo } from "react"
 
 export function useTechnologies() {
-	const { data, loading, error } = useApi<Technology[]>("/technology")
 
 	const highlightedTechnologies = useMemo(
-		() => data?.filter((tech) => tech.highlighted) || [],
-		[data]
+		() => technologies?.filter((tech) => tech.highlighted) || [],
+		[]
 	)
 
-	return { technologies: data || [], highlightedTechnologies, loading, error }
+	return { technologies, highlightedTechnologies }
 }
