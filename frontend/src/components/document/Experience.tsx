@@ -1,9 +1,9 @@
 export default function Experience() {
 	return (
 		<article className="flex flex-col sm:flex-row lg:flex-col items-center p-6 justify-around gap-2 bg-black border-zinc-500 shadow border-2 rounded-2xl">
-			<Item main="+25" label="projetos" />
-			<Item main="+250" label="pull requests" />
-			<Item main="+2.4k" label="commits" />
+			<Item main="+30" label="projetos" />
+			<Item main="+300" label="pull requests" />
+			<Item main="+3.2k" label="commits" />
 		</article>
 	)
 }
