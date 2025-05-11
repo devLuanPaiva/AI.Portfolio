@@ -1,5 +1,7 @@
 "use client"
+import Contacts from "@/components/contacts/Contacts"
 import Curriculum from "@/components/document/Curriculum"
+import MyJob from "@/components/job/MyJob"
 import Landing from "@/components/Landing/Landing"
 import ProjectsList from "@/components/projects/ProjectsList"
 import Loading from "@/components/shared/Loading"
@@ -15,7 +17,7 @@ export default function Home() {
 	return (
 		<Suspense fallback={<Loading message="Carregando..." />}>
 			<Landing technologies={highlightedTechnologies} />
-			<Container classStyle="py-20 flex flex-col gap-7">
+			<Container classStyle="py-20 flex flex-col gap-7 space-y-10">
 				<ProjectsList
 					title="Destaques"
 					projects={[
@@ -27,7 +29,9 @@ export default function Home() {
 				<ProjectsList title="Web" projects={webProjects} />
 				<ProjectsList title="Mobile" projects={mobileProjects} />
 				<Curriculum technologies={technologies} />
+				<MyJob />
 			</Container>
+			<Contacts />
 		</Suspense>
 	)
 }
