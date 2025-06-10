@@ -6,6 +6,7 @@ import Container from "../template/Container"
 import ProjectImagesList from "./ProjectImagesList"
 import Technologies from "../technologies/Technologies"
 import Readme from "./Readme"
+import { ProjectFrame } from "./ProjectFrame"
 
 export default function Project(props: Readonly<{ id: string }>) {
 	const [readme, setReadme] = useState<string>("")
@@ -26,9 +27,9 @@ export default function Project(props: Readonly<{ id: string }>) {
 				<h1 className="text-3xl font-bold self-start">
 					{project?.name ?? "Não encontrado"}
 				</h1>
-
 				<ProjectImagesList images={project.images.slice(1)} />
 				<Technologies smallerSize technologies={project?.technologies ?? []} />
+				{project.frame && <ProjectFrame frame={project.frame} />}
 				<Readme markdown={readme} />
 			</Container>
 		</section>

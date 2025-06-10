@@ -12,4 +12,5 @@ export default interface Project {
     highlighted: boolean
     repository: string
     technologies: Technology[]
+    frame?: React.ReactNode
 }
