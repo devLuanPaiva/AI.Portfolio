@@ -13,7 +13,7 @@ export const projects: Project[] = [
 			"https://ik.imagekit.io/p0mm3nebo/gameStore/image7.jpg?updatedAt=1746704038738",
 			"https://ik.imagekit.io/p0mm3nebo/gameStore/image2?updatedAt=1746629495638",
 			"https://ik.imagekit.io/p0mm3nebo/gameStore/image3?updatedAt=1746629508767",
-			"https://ik.imagekit.io/p0mm3nebo/gameStore/image4?updatedAt=1746629521891"
+			"https://ik.imagekit.io/p0mm3nebo/gameStore/image4?updatedAt=1746629521891",
 		],
 		level: Level.EXPERT,
 		type: Type.WEB,
@@ -28,6 +28,14 @@ export const projects: Project[] = [
 			technologies[19],
 			technologies[20],
 		],
+		frame: (
+			<iframe
+				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261373571556368386?compact=1"
+				height="399"
+				width="504"
+				title="GameStore"
+			></iframe>
+		),
 	},
 	{
 		id: 1,
@@ -53,6 +61,14 @@ export const projects: Project[] = [
 			technologies[19],
 			technologies[20],
 		],
+		frame: (
+			<iframe
+				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7288970793143730176?compact=1"
+				height="399"
+				width="504"
+				title="ConviteDigital"
+			></iframe>
+		),
 	},
 	{
 		id: 2,
@@ -78,15 +94,25 @@ export const projects: Project[] = [
 			technologies[19],
 			technologies[20],
 		],
+		frame: (
+			<iframe
+				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7222963038549659648?compact=1"
+				height="399"
+				width="504"
+				title="Barba Brutal"
+			></iframe>
+		),
 	},
 	{
 		id: 3,
 		name: "Trackllo",
-		description: "Trackllo é um gerenciador de quadros Kanban moderno e intuitivo, criado para ajudar equipes a acompanhar o progresso de tarefas e manter todos sempre alinhados.",
+		description:
+			"Trackllo é um gerenciador de quadros Kanban moderno e intuitivo, criado para ajudar equipes a acompanhar o progresso de tarefas e manter todos sempre alinhados.",
 		images: [
 			"https://ik.imagekit.io/p0mm3nebo/trackllo/woman-board.jpg?updatedAt=1746727536822",
 			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%203.jpg?updatedAt=1746790954172",
-			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%204.jpg?updatedAt=1746790954118"],
+			"https://ik.imagekit.io/p0mm3nebo/trackllo/Facebook%20cover%20-%204.jpg?updatedAt=1746790954118",
+		],
 		level: Level.INTERMEDIARY,
 		type: Type.WEB,
 		highlighted: true,
@@ -101,16 +127,26 @@ export const projects: Project[] = [
 			technologies[16],
 			technologies[19],
 			technologies[20],
-		]
+		],
+		frame: (
+			<iframe
+				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7326987145645064192?compact=1"
+				height="399"
+				width="504"
+				title="Trackllo"
+			></iframe>
+		),
 	},
 	{
 		id: 4,
 		name: "Space Quiz",
-		description: "Space Quiz é um aplicativo de perguntas e respostas sobre o espaço desenvolvido com React Native. O objetivo do aplicativo é testar seus conhecimentos sobre o cosmos com um quiz de 10 questões. No final, você verá a porcentagem de acertos para avaliar o seu desempenho.",
+		description:
+			"Space Quiz é um aplicativo de perguntas e respostas sobre o espaço desenvolvido com React Native. O objetivo do aplicativo é testar seus conhecimentos sobre o cosmos com um quiz de 10 questões. No final, você verá a porcentagem de acertos para avaliar o seu desempenho.",
 		images: [
 			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Captura%20de%20tela%202025-05-09%20073850.png?updatedAt=1746788660802",
 			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%202.jpg?updatedAt=1746788626422",
-			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%201.jpg?updatedAt=1746788626456"],
+			"https://ik.imagekit.io/p0mm3nebo/spaceQuiz/Facebook%20cover%20-%201.jpg?updatedAt=1746788626456",
+		],
 		level: Level.BEGINNER,
 		type: Type.MOBILE,
 		highlighted: false,
@@ -120,24 +156,30 @@ export const projects: Project[] = [
 			technologies[8],
 			technologies[16],
 			technologies[20],
-		]
+		],
 	},
 	{
 		id: 5,
 		name: "Pokédex",
-		description: "Pokédex é uma aplicação web que funciona como uma Pokédex, permitindo aos usuários pesquisar, visualizar e filtrar informações sobre os Pokémon. A aplicação utiliza a PokeAPI para obter dados sobre os Pokémon.",
+		description:
+			"Pokédex é uma aplicação web que funciona como uma Pokédex, permitindo aos usuários pesquisar, visualizar e filtrar informações sobre os Pokémon. A aplicação utiliza a PokeAPI para obter dados sobre os Pokémon.",
 		images: [
 			"https://ik.imagekit.io/p0mm3nebo/pokedex/Group%208.jpg?updatedAt=1746794533522",
 			"https://ik.imagekit.io/p0mm3nebo/pokedex/Facebook%20cover%20-%205.jpg?updatedAt=1746794346157",
-			"https://ik.imagekit.io/p0mm3nebo/pokedex/Facebook%20cover%20-%206.jpg?updatedAt=1746794345893"
+			"https://ik.imagekit.io/p0mm3nebo/pokedex/Facebook%20cover%20-%206.jpg?updatedAt=1746794345893",
 		],
 		level: Level.BEGINNER,
 		type: Type.MOBILE,
 		highlighted: false,
 		repository: "https://github.com/devLuanPaiva/pokedex",
-		technologies: [
-			technologies[24],
-			technologies[20],
-		]
-	}
+		technologies: [technologies[24], technologies[20]],
+		frame: (
+			<iframe
+				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7247644353030967296?compact=1"
+				height="399"
+				width="504"
+				title="Pokedex"
+			></iframe>
+		),
+	},
 ]
