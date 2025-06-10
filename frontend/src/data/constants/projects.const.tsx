@@ -29,12 +29,14 @@ export const projects: Project[] = [
 			technologies[20],
 		],
 		frame: (
-			<iframe
-				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261373571556368386?compact=1"
-				height="399"
-				width="504"
-				title="GameStore"
-			></iframe>
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261373571556368386?compact=1"
+					title="GameStore"
+					className="w-full h-full border-0"
+					allowFullScreen
+				></iframe>
+			</div>
 		),
 	},
 	{
@@ -62,12 +64,14 @@ export const projects: Project[] = [
 			technologies[20],
 		],
 		frame: (
-			<iframe
-				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7288970793143730176?compact=1"
-				height="399"
-				width="504"
-				title="ConviteDigital"
-			></iframe>
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7288970793143730176?compact=1"
+					className="w-full h-full border-0"
+					allowFullScreen
+					title="ConviteDigital"
+				></iframe>
+			</div>
 		),
 	},
 	{
@@ -95,12 +99,14 @@ export const projects: Project[] = [
 			technologies[20],
 		],
 		frame: (
-			<iframe
-				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7222963038549659648?compact=1"
-				height="399"
-				width="504"
-				title="Barba Brutal"
-			></iframe>
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7222963038549659648?compact=1"
+					className="w-full h-full border-0"
+					allowFullScreen
+					title="Barba Brutal"
+				></iframe>
+			</div>
 		),
 	},
 	{
@@ -129,12 +135,14 @@ export const projects: Project[] = [
 			technologies[20],
 		],
 		frame: (
-			<iframe
-				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7326987145645064192?compact=1"
-				height="399"
-				width="504"
-				title="Trackllo"
-			></iframe>
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7326987145645064192?compact=1"
+					className="w-full h-full border-0"
+					allowFullScreen
+					title="Trackllo"
+				></iframe>
+			</div>
 		),
 	},
 	{
@@ -174,12 +182,14 @@ export const projects: Project[] = [
 		repository: "https://github.com/devLuanPaiva/pokedex",
 		technologies: [technologies[24], technologies[20]],
 		frame: (
-			<iframe
-				src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7247644353030967296?compact=1"
-				height="399"
-				width="504"
-				title="Pokedex"
-			></iframe>
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7247644353030967296?compact=1"
+					className="w-full h-full border-0"
+					allowFullScreen
+					title="Pokedex"
+				></iframe>
+			</div>
 		),
 	},
 ]
