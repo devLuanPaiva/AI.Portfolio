@@ -1,4 +1,4 @@
-import { TechnologiesProps } from "@/data/interfaces"
+import { TechnologiesProps } from "@/data/models/interfaces"
 
 export function TechnologiesWorked(props: Readonly<TechnologiesProps>) {
 	if (!props.technologies) return null

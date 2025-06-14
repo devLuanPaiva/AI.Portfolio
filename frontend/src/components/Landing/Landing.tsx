@@ -1,4 +1,4 @@
-import { TechnologiesProps } from "@/data/interfaces"
+import { TechnologiesProps } from "@/data/models/interfaces"
 import { Technologies } from "../technologies/Technologies"
 
 export function Landing(props: Readonly<TechnologiesProps>) {

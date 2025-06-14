@@ -1,6 +1,6 @@
-import { ProjectProps } from "@/data/interfaces";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { ProjectProps } from "@/data/models/interfaces";
 
 export  function ProjectItem(props: Readonly<ProjectProps>) {
     return (

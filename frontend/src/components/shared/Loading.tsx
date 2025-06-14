@@ -1,4 +1,4 @@
-import { MessageProps } from "@/data/interfaces"
+import { MessageProps } from "@/data/models/interfaces"
 import { IconLoader } from "@tabler/icons-react"
 
 export function Loading({ message }: Readonly<MessageProps>) {

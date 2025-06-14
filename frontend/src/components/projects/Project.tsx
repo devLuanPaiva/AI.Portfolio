@@ -3,9 +3,9 @@ import { Readme } from "./Readme"
 import { useProjectId } from "@/data/hooks"
 import { useEffect, useState } from "react"
 import { ProjectFrame } from "./ProjectFrame"
+import { fetchReadme } from "@/data/functions"
 import { Container } from "../template/Container"
 import { ProjectImagesList } from "./ProjectImagesList"
-import { fetchReadme } from "@/data/functions/fetchReadme"
 import { Technologies } from "../technologies/Technologies"
 
 export function Project(props: Readonly<{ id: string }>) {

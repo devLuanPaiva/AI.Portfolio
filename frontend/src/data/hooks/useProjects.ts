@@ -1,6 +1,6 @@
 "use client"
-import { Type } from "@core"
 import { useMemo } from "react"
+import { Type } from "../models/enums"
 import { projects } from "../constants/projects.const"
 export function useProjects() {
 	const highlightedProjects = useMemo(

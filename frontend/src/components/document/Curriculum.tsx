@@ -1,7 +1,7 @@
-import { TechnologiesProps } from "@/data/interfaces";
-import { TechnologiesWorked } from "./TechnologiesWorked";
-import { Experience } from "./Experience";
 import { MinCV } from "./MinCV";
+import { Experience } from "./Experience";
+import { TechnologiesWorked } from "./TechnologiesWorked";
+import { TechnologiesProps } from "@/data/models/interfaces";
 
 export function Curriculum(props: Readonly<TechnologiesProps>) {
     return (

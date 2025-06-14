@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { ContentMD } from "../shared"
 import chatImage from "@/assets/chat.svg"
-import { Message } from "@/data/interfaces"
+import { Message } from "@/data/models/interfaces"
 
 interface MessageBubbleProps {
 	message: Message

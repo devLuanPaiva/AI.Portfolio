@@ -1,5 +1,5 @@
-import { Technology } from "@core";
 import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
+import {Technology} from "../models/interfaces/";
 
 export const technologies: Technology[] = [
     { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },

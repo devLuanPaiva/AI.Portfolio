@@ -1,4 +1,5 @@
-import { Level, Project, Type } from "@core"
+import { Level, Type } from "../models/enums"
+import { Project } from "../models/interfaces"
 import { technologies } from "./technologies.const"
 
 export const projects: Project[] = [

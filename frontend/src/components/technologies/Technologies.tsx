@@ -1,4 +1,4 @@
-import { TechnologiesProps } from "@/data/interfaces"
+import { TechnologiesProps } from "@/data/models/interfaces"
 import Image from "next/image"
 
 export function Technologies(props: Readonly<TechnologiesProps>) {
