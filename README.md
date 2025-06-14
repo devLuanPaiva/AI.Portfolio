@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="./.gitassets/capa.png" width="350px">
+<img src="https://dev-luan-paiva.vercel.app/logo.png" width="350px">
 
 <div data-badges>
     <img src="https://img.shields.io/github/stars/portfolio-projetos-dev/portfoleo?style=for-the-badge" alt="GitHub stars" />
