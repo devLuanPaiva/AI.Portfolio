@@ -8,7 +8,7 @@ import Technologies from "../technologies/Technologies"
 import Readme from "./Readme"
 import { ProjectFrame } from "./ProjectFrame"
 
-export default function Project(props: Readonly<{ id: string }>) {
+export function Project(props: Readonly<{ id: string }>) {
 	const [readme, setReadme] = useState<string>("")
 	const { project } = useProjectId(props.id)
 

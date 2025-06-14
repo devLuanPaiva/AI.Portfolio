@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 
-export default function useSessionStorage<T>(key: string, initialValue: T) {
+export  function useSessionStorage<T>(key: string, initialValue: T) {
     const [value, setValue] = useState<T>(() => {
         const localValue = sessionStorage.getItem(key)
         return localValue ? JSON.parse(localValue) : initialValue

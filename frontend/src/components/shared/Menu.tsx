@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Menu() {
+export function Menu() {
     return (
         <nav className="flex items-center gap-6">
             <Item href="/" selected >Início</Item>

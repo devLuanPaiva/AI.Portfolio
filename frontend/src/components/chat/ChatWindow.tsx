@@ -2,11 +2,11 @@
 import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
 import { IconMessages, IconReload, IconSend } from "@tabler/icons-react"
 import useChat from "@/data/hooks/useChat"
-import MessageBubble from "./MessageBubble"
+import{ MessageBubble} from "./MessageBubble"
 import thinkingImg from "@/assets/pensando.gif"
 import Image from "next/image"
 
-export default function ChatWindow() {
+export function ChatWindow() {
 	const { addMessage, messages, thinking, clearMessages } = useChat()
 	const [text, setText] = useState("")
 	const endChatRef = useRef<HTMLDivElement>(null)

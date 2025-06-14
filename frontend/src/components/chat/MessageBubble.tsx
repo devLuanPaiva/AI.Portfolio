@@ -8,7 +8,7 @@ interface MessageBubbleProps {
 	omitAuthor?: boolean
 }
 
-export default function MessageBubble(props: Readonly<MessageBubbleProps>) {
+export function MessageBubble(props: Readonly<MessageBubbleProps>) {
 	return props.message.side === "left" ? (
 		<LeftBallon {...props} />
 	) : (

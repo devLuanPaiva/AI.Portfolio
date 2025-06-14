@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem"
 import { cn } from "@/lib/utils"
 import { useScrollerAnimation } from "@/data/hooks/useScrollerAnimation"
 
-export default function ProjectsList(props: Readonly<ProjectsProps>) {
+export function ProjectsList(props: Readonly<ProjectsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (
 		<section>

@@ -1,7 +1,7 @@
 "use server";
 import { Message } from "../interfaces";
 
-export default async function toTalk(chatId: string, message: Message): Promise<string | null> {
+export async function toTalk(chatId: string, message: Message): Promise<string | null> {
     const webhookUrl = process.env.CHAT_WEBHOOK;
     if (!webhookUrl) return null;
 

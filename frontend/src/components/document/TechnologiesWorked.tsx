@@ -1,6 +1,6 @@
 import { TechnologiesProps } from "@/data/interfaces"
 
-export default function TechnologiesWorked(props: Readonly<TechnologiesProps>) {
+export function TechnologiesWorked(props: Readonly<TechnologiesProps>) {
 	if (!props.technologies) return null
 	return (
 		<article className="flex justify-center items-center p-6 w-full lg:w-72 bg-black border-zinc-500 shadow border-2 rounded-2xl ">

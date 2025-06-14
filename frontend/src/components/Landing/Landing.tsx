@@ -1,7 +1,7 @@
 import { TechnologiesProps } from "@/data/interfaces"
 import Technologies from "../technologies/Technologies"
 
-export default function Landing(props: Readonly<TechnologiesProps>) {
+export function Landing(props: Readonly<TechnologiesProps>) {
 	return (
 		<section className="bg-[url(/bg.jpg)] w-full bg-cover bg-center h-[600px] -mt-[100px] pt-[100px] z-0 flex flex-col  items-center justify-center gap-5 ">
 			<div className="flex flex-col items-center gap-1">

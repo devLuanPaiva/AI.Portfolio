@@ -3,7 +3,7 @@ import Logo from "../shared/Logo"
 import Container from "./Container"
 import Menu from "../shared/Menu"
 
-export default function Header() {
+export function Header() {
 	return (
 		<header className="flex  items-center min-h-16  py-1 bg-gradient-to-b from-black to-transparent  z-50 relative w-full">
 			<Container classStyle="flex items-center justify-between">

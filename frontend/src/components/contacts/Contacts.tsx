@@ -11,7 +11,7 @@ import {
 } from "@tabler/icons-react"
 import { useState } from "react"
 
-export default function Contacts() {
+export function Contacts() {
 	const [name, setName] = useState("")
 	const [email, setEmail] = useState("")
 	const [message, setMessage] = useState("")

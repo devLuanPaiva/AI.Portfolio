@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function MyJob() {
+export function MyJob() {
 	return (
 		<section className="px-6 py-10 bg-black text-white w-full  shadow-lg rounded-2xl">
 			<h2 className="text-3xl font-extrabold text-center bg-gradient-to-r from-red-600 via-white to-red-600 text-transparent bg-clip-text mb-10">

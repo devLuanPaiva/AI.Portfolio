@@ -6,7 +6,7 @@ import Image from "next/image"
 interface ImageListsProps {
 	images: string[]
 }
-export default function ProjectImagesList(props: Readonly<ImageListsProps>) {
+export function ProjectImagesList(props: Readonly<ImageListsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (
 		<section className="max-w-screen">

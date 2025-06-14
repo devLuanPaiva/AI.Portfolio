@@ -1,6 +1,6 @@
 import perfil from "@/assets/perfil.png"
 import Image from "next/image"
-export default function MinCV() {
+export function MinCV() {
 	return (
 		<article className="flex-1 flex flex-col-reverse sm:flex-row lg:flex-col-reverse xl:flex-row bg-black border-zinc-500 shadow border-2 rounded-2xl gap-5 px-6 pt-6">
 			<figure className="relative min-w-64 h-64 self-center overflow-hidden rounded-2xl">

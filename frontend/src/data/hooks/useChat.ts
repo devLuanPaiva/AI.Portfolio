@@ -5,7 +5,7 @@ import { Message } from "../interfaces";
 import { useState } from "react";
 import toTalk from "../functions/toTalk";
 
-export default function useChat() {
+export function useChat() {
     const [chatId] = useSessionStorage<string>("chatId", Id.toGenerate())
     const [messages, setMessages] = useSessionStorage<Message[]>("messages", [])
     const [thinking, setThinking] = useState(false)

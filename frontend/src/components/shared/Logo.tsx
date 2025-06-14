@@ -4,7 +4,7 @@ import logo from "@/assets/logo.png"
 import Link from "next/link"
 import Image from "next/image"
 
-export default function Logo() {
+export function Logo() {
 	return (
 		<motion.div
 			className="hidden sm:flex items-center gap-2 p-4 "

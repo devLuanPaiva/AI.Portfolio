@@ -1,7 +1,7 @@
 import { TechnologiesProps } from "@/data/interfaces"
 import Image from "next/image"
 
-export default function Technologies(props: Readonly<TechnologiesProps>) {
+export function Technologies(props: Readonly<TechnologiesProps>) {
 	if (!props.technologies || props.technologies.length === 0) return null
 	const sortedTechnologies = [...props.technologies].sort((a, b) =>
 		a.name.localeCompare(b.name)
