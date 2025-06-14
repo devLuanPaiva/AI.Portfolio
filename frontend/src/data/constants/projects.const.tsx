@@ -223,6 +223,16 @@ export const projects: Project[] = [
 			technologies[26],
 			technologies[27],
 			technologies[28],
-		]
+		],
+		frame: (
+			<div className="w-full max-w-4xl aspect-video rounded-[10px] overflow-hidden shadow-lg">
+				<iframe
+					src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7339354292631285760?compact=1"
+					className="w-full h-full border-0"
+					allowFullScreen
+					title="Travel Advisor"
+				></iframe>			
+			</div>
+		),
 	}
 ]
