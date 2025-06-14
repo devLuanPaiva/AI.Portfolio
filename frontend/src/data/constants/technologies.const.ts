@@ -1,5 +1,5 @@
 import { Technology } from "@core";
-import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, PostgresqlIcon, PrismaIcon, ReactIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
+import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
 
 export const technologies: Technology[] = [
     { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },
@@ -27,5 +27,9 @@ export const technologies: Technology[] = [
     { id: 23, name: "Vercel", description: "Plataforma de deploy para projetos front-end.", image: VercelIcon.src, highlighted: false },
     { id: 24, name: "Vite", description: "Bundler moderno e rápido para projetos web.", image: ViteIcon.src, highlighted: false },
     { id: 25, name: "Vue.js", description: "Framework progressivo para construção de interfaces.", image: VuejsIcon.src, highlighted: false },
+    { id: 26, name: "Mercado Pago", description: "Plataforma de pagamentos online.", image: MercadoPagoIcon.src, highlighted: false },
+    { id: 27, name: "Google Maps", description: "API para integração de mapas e geolocalização.", image: GoogleMapsIcon.src, highlighted: false },
+    { id: 28, name: "OAuth", description: "Protocolo de autorização para acesso seguro a APIs.", image: OAuthIcon.src, highlighted: false },
+    { id: 29, name: "Resend", description: "Serviço de envio de e-mails transacionais.", image: ResendIcon.src, highlighted: false },
 ];
 
