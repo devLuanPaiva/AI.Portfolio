@@ -1,5 +1,5 @@
 "use server";
-import { Message } from "../interfaces";
+import { Message } from "../models/interfaces";
 
 export async function toTalk(chatId: string, message: Message): Promise<string | null> {
     const webhookUrl = process.env.CHAT_WEBHOOK;
