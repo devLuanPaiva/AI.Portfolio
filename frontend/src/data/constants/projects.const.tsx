@@ -192,4 +192,37 @@ export const projects: Project[] = [
 			</div>
 		),
 	},
+	{
+		id: 7,
+		name: "Travel Advisor",
+		description:
+			"Travel Advisor é um aplicativo de turismo que permite aos usuários pesquisar e encontrar informações sobre destinos turísticos, incluindo hotéis, restaurantes e atrações. O aplicativo utiliza a API do TripAdvisor para obter dados sobre os destinos.",
+		images: [
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/capa?updatedAt=1749904281573",
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/Group%208.jpg?updatedAt=1749772746299",
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/Group%2012.jpg?updatedAt=1749772746345",
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/Group%209.jpg?updatedAt=1749772746254",
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/Group%2011.jpg?updatedAt=1749772746205",
+			"https://ik.imagekit.io/p0mm3nebo/travelAdvisor/Group%2013.jpg?updatedAt=1749772746279"
+		],
+		level: Level.EXPERT,
+		type: Type.WEB,
+		highlighted: true,
+		repository: "https://github.com/devLuanPaiva/TravelAdvisor",
+		technologies: [
+			technologies[5],
+			technologies[8],
+			technologies[9],
+			technologies[12],
+			technologies[13],
+			technologies[14],
+			technologies[15],
+			technologies[16],
+			technologies[19],
+			technologies[25],
+			technologies[26],
+			technologies[27],
+			technologies[28],
+		]
+	}
 ]
