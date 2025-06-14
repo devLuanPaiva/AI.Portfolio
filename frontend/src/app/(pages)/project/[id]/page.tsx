@@ -1,5 +1,6 @@
-import Project from "@/components/projects/Project"
-import Loading from "@/components/shared/Loading"
+
+import { Project } from "@/components/projects/Project"
+import { Loading } from "@/components/shared"
 import { Suspense } from "react"
 
 export default async function PageProject(

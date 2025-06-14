@@ -1,10 +1,10 @@
 "use client"
-import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
-import { IconMessages, IconReload, IconSend } from "@tabler/icons-react"
-import useChat from "@/data/hooks/useChat"
-import{ MessageBubble} from "./MessageBubble"
-import thinkingImg from "@/assets/pensando.gif"
 import Image from "next/image"
+import { useChat } from "@/data/hooks"
+import { MessageBubble } from "./MessageBubble"
+import thinkingImg from "@/assets/pensando.gif"
+import { IconMessages, IconReload, IconSend } from "@tabler/icons-react"
+import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
 
 export function ChatWindow() {
 	const { addMessage, messages, thinking, clearMessages } = useChat()

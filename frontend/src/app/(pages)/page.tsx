@@ -1,14 +1,14 @@
 "use client"
-import Contacts from "@/components/contacts/Contacts"
-import Curriculum from "@/components/document/Curriculum"
-import MyJob from "@/components/job/MyJob"
-import Landing from "@/components/Landing/Landing"
-import ProjectsList from "@/components/projects/ProjectsList"
-import Loading from "@/components/shared/Loading"
-import Container from "@/components/template/Container"
-import { useProjects } from "@/data/hooks/useProjects"
-import { useTechnologies } from "@/data/hooks/useTechnologies"
 import { Suspense } from "react"
+import { Loading } from "@/components/shared"
+import { MyJob } from "@/components/job/MyJob"
+import { Landing } from "@/components/Landing/Landing"
+import { Contacts } from "@/components/contacts/Contacts"
+import { Container } from "@/components/template/Container"
+import { useProjects, useTechnologies } from "@/data/hooks"
+import { Curriculum } from "@/components/document/Curriculum"
+import { ProjectsList } from "@/components/projects/ProjectsList"
+
 
 export default function Home() {
 	const { technologies, highlightedTechnologies } = useTechnologies()

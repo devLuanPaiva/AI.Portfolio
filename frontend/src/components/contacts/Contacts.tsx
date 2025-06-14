@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import Logo from "../shared/Logo"
+import { Logo } from "../shared"
 import {
 	IconBrandWhatsapp,
 	IconMail,

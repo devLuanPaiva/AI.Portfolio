@@ -1,6 +1,6 @@
 "use client"
-import { technologies } from '@/data/constants/technologies.const'
 import { useMemo } from "react"
+import { technologies } from '@/data/constants/technologies.const'
 
 export function useTechnologies() {
 

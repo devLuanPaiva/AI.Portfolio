@@ -1,12 +1,12 @@
 "use client"
-import { fetchReadme } from "@/data/functions/fetchReadme"
-import { useProjectId } from "@/data/hooks/useProjects"
+import { Readme } from "./Readme"
+import { useProjectId } from "@/data/hooks"
 import { useEffect, useState } from "react"
-import Container from "../template/Container"
-import ProjectImagesList from "./ProjectImagesList"
-import Technologies from "../technologies/Technologies"
-import Readme from "./Readme"
 import { ProjectFrame } from "./ProjectFrame"
+import { Container } from "../template/Container"
+import { ProjectImagesList } from "./ProjectImagesList"
+import { fetchReadme } from "@/data/functions/fetchReadme"
+import { Technologies } from "../technologies/Technologies"
 
 export function Project(props: Readonly<{ id: string }>) {
 	const [readme, setReadme] = useState<string>("")

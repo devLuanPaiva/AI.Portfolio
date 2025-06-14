@@ -1,4 +1,4 @@
-import ContentMD from "../shared/ContentMD"
+import { ContentMD } from "../shared/ContentMD"
 
 export interface ReadmeProps {
     markdown: string

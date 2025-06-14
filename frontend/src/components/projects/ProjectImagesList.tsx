@@ -1,7 +1,7 @@
 "use client"
-import { cn } from "@/lib/utils"
-import { useScrollerAnimation } from "@/data/hooks/useScrollerAnimation"
 import Image from "next/image"
+import { cn } from "@/lib/utils"
+import { useScrollerAnimation } from "@/data/hooks"
 
 interface ImageListsProps {
 	images: string[]

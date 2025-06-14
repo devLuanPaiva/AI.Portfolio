@@ -1,7 +1,7 @@
 "use client"
-import { useEffect, useState } from "react"
 import { ajax } from "rxjs/ajax"
 import { catchError, of } from "rxjs"
+import { useEffect, useState } from "react"
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL
 

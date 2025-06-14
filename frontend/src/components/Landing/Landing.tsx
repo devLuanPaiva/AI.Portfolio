@@ -1,5 +1,5 @@
 import { TechnologiesProps } from "@/data/interfaces"
-import Technologies from "../technologies/Technologies"
+import { Technologies } from "../technologies/Technologies"
 
 export function Landing(props: Readonly<TechnologiesProps>) {
 	return (

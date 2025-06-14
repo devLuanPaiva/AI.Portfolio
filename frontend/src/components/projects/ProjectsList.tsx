@@ -1,8 +1,8 @@
 "use client"
-import { ProjectsProps } from "@/data/interfaces"
-import ProjectItem from "./ProjectItem"
 import { cn } from "@/lib/utils"
-import { useScrollerAnimation } from "@/data/hooks/useScrollerAnimation"
+import { ProjectItem } from "./ProjectItem"
+import { ProjectsProps } from "@/data/interfaces"
+import { useScrollerAnimation } from "@/data/hooks"
 
 export function ProjectsList(props: Readonly<ProjectsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()

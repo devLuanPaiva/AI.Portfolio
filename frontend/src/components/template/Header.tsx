@@ -1,7 +1,6 @@
 import Link from "next/link"
-import Logo from "../shared/Logo"
-import Container from "./Container"
-import Menu from "../shared/Menu"
+import { Logo, Menu } from "../shared"
+import { Container } from "./Container"
 
 export function Header() {
 	return (

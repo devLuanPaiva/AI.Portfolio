@@ -1,10 +1,11 @@
-import ChatButton from "@/components/chat/ChatButton";
-import Header from "@/components/template/Header";
+import { ChatButton } from "@/components/chat";
+import { Header } from "@/components/template/Header";
+
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <main>
-            <Header/>
+            <Header />
             {children}
             <ChatButton />
         </main>
